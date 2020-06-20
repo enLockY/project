@@ -1,0 +1,46 @@
+public class Main {
+    public static void main(String[] args) {
+        byte byteX = 127;
+        short shortX = 32767;
+        int intX = 2147;
+        long longX = 922L;
+        float floatX = 3.14f;
+        double doubleX = 12.62;
+        char charX = '$';
+        boolean boolX = byteX > 128;
+        String strX = "Hey you";
+        System.out.println(task3(2,1, 4, 2));
+        System.out.println(task4(5, 16));
+        task5(-1);
+        System.out.println(task6(-1));
+        System.out.println(task7("Георгий"));
+        task8(1800);
+
+    }
+    static int task3(int a, int b, int c, int d) {
+        return a*(b+(c/d));
+    }
+    static boolean task4(int a, int b) {
+        return 10 <= a + b && a + b <=20;
+    }
+    static void task5 (int a) {
+        if (a >= 0) {
+            System.out.println("Вы ввели положительное число");
+        }
+        else System.out.println("Вы ввели отрицательное число");
+    }
+    static boolean task6 (int a) {
+        return a < 0;
+    }
+    static String task7 (String a) {
+        return "Привет, " + a + "!";
+    }
+    static void task8 (int a) {
+        if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0) {
+            System.out.println(a + " год високосный");
+        }
+        else System.out.println(a + " год невисокосный");
+    }
+    }
+
+
